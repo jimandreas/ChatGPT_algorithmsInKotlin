@@ -13,6 +13,6 @@ Currentl version installed is v2021.3.3.
 ## LeetCode problems solved
 
 
-| #    | Title | Solution |
-|------| ------ | ------ |
-| 0007 | [reverse-integer](https://leetcode.com/problems/reverse-integer/description/) | [Kotlin code](./src/main/kotlin/leetcode/P0007_ReverseInteger.kt) |
+| #    | Title                                                                         | Solution                                                          | Unit Test                                                           |
+|------|-------------------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------|
+| 0007 | [reverse-integer](https://leetcode.com/problems/reverse-integer/description/) | [Kotlin code](./src/main/kotlin/leetcode/P0007_ReverseInteger.kt) | [Test code](./src/test/kotlin/leetcode/P0007_ReverseIntegerTest.kt) |
