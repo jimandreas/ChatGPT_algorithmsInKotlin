@@ -8,7 +8,7 @@ these unit tests into the test/kotlin hierarchy.
 
 The repo uses the gradle system to build (*.kts) and is run in
 the awesome IntelliJ IDEA integrated developement environment (IDE). 
-Currentl version installed is v2021.3.3.
+Current version installed is v2021.3.3.
 
 ## LeetCode problems solved
 
