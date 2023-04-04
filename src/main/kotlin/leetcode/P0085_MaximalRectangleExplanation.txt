@@ -1,0 +1,10 @@
+> Please explain the solution strategy in your last implementation.
+
+Sure! The solution uses a variation of the "Largest Rectangle in a Histogram" algorithm. The basic idea is to consider each row of the matrix as the histogram, and compute the largest rectangle that can be formed from that histogram. We keep track of the maximum area seen so far and update it if we find a larger rectangle.
+
+To compute the largest rectangle in a histogram, we use a stack to keep track of the bars that form the current candidate rectangle. We iterate through the bars in the histogram from left to right. For each bar, we check if it is taller than the bar on the top of the stack. If it is, we push the current bar onto the stack. If it is shorter, we pop the bars off the stack until we find a bar that is shorter than the current one, and compute the area of the rectangle formed by that bar and the bars on top of the stack. We keep track of the maximum area seen so far and update it if we find a larger rectangle.
+
+To adapt this algorithm to the matrix, we maintain a height array that keeps track of the height of the bars in the current row. We initialize the height array with the heights of the bars in the first row of the matrix. Then for each subsequent row, we update the height array by setting the height of each bar to zero if the corresponding entry in the matrix is '0', and to the sum of the height of the bar in the previous row and 1 if the corresponding entry in the matrix is '1'. We then compute the largest rectangle in the histogram formed by the bars in the current row using the stack-based algorithm, and update the maximum area seen so far if we find a larger rectangle.
+
+By applying this algorithm row-by-row, we can find the largest rectangle containing only 1's in the matrix.
+
