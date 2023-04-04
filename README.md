@@ -10,7 +10,7 @@ The repo uses the gradle system to build (*.kts) and is run in
 the awesome IntelliJ IDEA integrated developement environment (IDE). 
 Current version installed is v2021.3.3.
 
-## LeetCode problems solved
+### LeetCode problems solved
 
 
 | #    | Title                                                                                 | Solution                                                             | Unit Test                                                               |
@@ -18,3 +18,21 @@ Current version installed is v2021.3.3.
 | 0007 | [reverse-integer](https://leetcode.com/problems/reverse-integer/description/)         | [Kotlin code](./src/main/kotlin/leetcode/P0007_ReverseInteger.kt)    | [Test code](./src/test/kotlin/leetcode/P0007_ReverseIntegerTest.kt)     |
 | 0042 | [trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/description/) | [Kotlin code](./src/main/kotlin/leetcode/P0042_TrappingRainWater.kt) | [Test code](./src/test/kotlin/leetcode/P0042_TrappingRainWaterTest.kt)  |
 | 0085 | [trapping-rain-water](https://leetcode.com/problems/maximal-rectangle/description/)   | [Kotlin code](./src/main/kotlin/leetcode/P0085_MaximalRectangle.kt)  | [Test code](./src/test/kotlin/leetcode/P0085_MaximalRectangleTest.kt)   |
+
+### HackerRank problems
+
+| #    | Name                                                                                | Solution                                                         | Unit Test                                                               |
+|------|-------------------------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------|
+| 0007 | [Buying Show Tickets](https://www.hackerrank.com/work/tests/356098/questions)       | [Kotlin code](./src/main/kotlin/hackerRank/BuyingShowTickets.kt) | [Test code](./src/test/kotlin/hackerRank/BuyingShowTicketsTest.kt)      |
+
+NOTE: The HackerRank test failed because of a timeout.
+The test passed for small amounts of tickets, but failed when the test expanded to an array of 100,000 people and 
+the first person wanted to buy 467 million tickets.   The expected answer was also, and I am not making this up:
+
+36,176,760,994,361
+
+yep. 36 Billion for the number of iterations to get the last ticket purchased.   No wonder that the thing timed out.
+
+At this point HackerRank attemps are ABANDONED.  Basically not impressed by HackerRank but I am VERY IMPRESSED by 
+the ability of ChatCPT to work with corrections to a problem that was expressed more visually than technically.
+See the test solution and the description of the algorithm for more details.

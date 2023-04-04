@@ -1,0 +1,51 @@
+Problem description from HackerRank:
+
+Alex plans on visiting the museum and is at the counter to purchase tickets to get in. Tickets are sold only one at a time. If a visitor needs more than one ticket, he/she has to pass through the queue again to buy each one.
+
+Given the number of visitors and the number of tickets each visitor needs, determine the amount of time Alex requires to buy the number needed. Alex's place in the queue will be given. Each transaction takes 1 unit of time. and the time taken to go to the back of the line can be ignore
+
+Please omplete the function "waitingTime" in Kotlin.
+
+The function must return a long integer representing the units of time it takes Alex to purchase the desired number of tickets.
+
+The function "waitingTime" has the following parameter(s):
+
+    int tickets [n]:  a zero-indexed integer array of tickets desired by the person i at position tickets[i]
+
+    int p: an integer that is Alex's position in line
+
+Sample:
+tickets = 2, 6, 3, 4, 5
+p = 2
+output = 12
+
+please also complete 5 JUNIT5 tests to check the function.  Thank you.
+
+---
+The ChatGPT algorithm produced a solution but didn't get the iteration part correct.  This was not saved here.
+
+I clarified the problem:
+
+> Sorry that still isn't correct.   The algorithm should iterate over the tickets array subtracting one from each index until that array entry is zero.   The algorithm ends when the index array corresponding to tickets[p] that is to say alex's position hits zero.  At that time the algorithm should return the time.  The time is incremented by one for each step in the iteration across the tickets array.
+
+ChatGPT responds:
+
+This implementation uses a while loop to keep processing tickets until the ticket corresponding to Alex's position is zero. It also uses a copy of the original tickets array to keep track of how many tickets are left for each person. The loop iterates over each person's tickets, decrementing them by one and incrementing the time for each ticket purchased. When Alex's tickets are all purchased, the function returns the total time taken.
+
+NOTE: that this solution failed in the HackerRank test scaffold.  The failing tests were VERY LARGE values, and timed out.
+
+I personally view these test cases as irrational - as there is no real world use case for a patron to try to
+purchase 468 million tickets.  Be serious.  This ends the attempts to solve HackerRank questions.
+
+Failing test (abbreviated):
+
+Testcase 13: Terminated due to timeout
+Input [Download]
+
+100000  (entries in the array)
+467940393   Patron 0 - 467 million tickets needed (???!!!)
+[...]
+
+Expected Output [Download]
+
+36176760994361
