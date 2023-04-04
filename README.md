@@ -19,11 +19,17 @@ Current version installed is v2021.3.3.
 | 0042 | [trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/description/) | [Kotlin code](./src/main/kotlin/leetcode/P0042_TrappingRainWater.kt) | [Test code](./src/test/kotlin/leetcode/P0042_TrappingRainWaterTest.kt)  |
 | 0085 | [trapping-rain-water](https://leetcode.com/problems/maximal-rectangle/description/)   | [Kotlin code](./src/main/kotlin/leetcode/P0085_MaximalRectangle.kt)  | [Test code](./src/test/kotlin/leetcode/P0085_MaximalRectangleTest.kt)   |
 
-### HackerRank problems
+### Codewars problems solved:
+
+| #    | Name                                                                             | Solution                                                   | Unit Test                                                           |
+|------|----------------------------------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------|
+| ---- | [Two Oldest Ages](https://www.codewars.com/kata/511f11d355fe575d2c000001/kotlin) | [Kotlin code](./src/main/kotlin/codeWars/TwoOldestAges.kt) | [Test code](./src/test/kotlin/codeWars/TwoOldestAgesTest.kt)        |
+
+### HackerRank problem ("not solved")
 
 | #    | Name                                                                                | Solution                                                         | Unit Test                                                               |
 |------|-------------------------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------|
-| 0007 | [Buying Show Tickets](https://www.hackerrank.com/work/tests/356098/questions)       | [Kotlin code](./src/main/kotlin/hackerRank/BuyingShowTickets.kt) | [Test code](./src/test/kotlin/hackerRank/BuyingShowTicketsTest.kt)      |
+| ---- | [Buying Show Tickets](https://www.hackerrank.com/work/tests/356098/questions)       | [Kotlin code](./src/main/kotlin/hackerRank/BuyingShowTickets.kt) | [Test code](./src/test/kotlin/hackerRank/BuyingShowTicketsTest.kt)      |
 
 NOTE: The HackerRank test failed because of a timeout.
 The test passed for small amounts of tickets, but failed when the test expanded to an array of 100,000 people and 
@@ -33,6 +39,6 @@ the first person wanted to buy 467 million tickets.   The expected answer was al
 
 yep. 36 Billion for the number of iterations to get the last ticket purchased.   No wonder that the thing timed out.
 
-At this point HackerRank attemps are ABANDONED.  Basically not impressed by HackerRank but I am VERY IMPRESSED by 
+At this point HackerRank attempts are ABANDONED.  Basically not impressed by HackerRank but I am VERY IMPRESSED by 
 the ability of ChatCPT to work with corrections to a problem that was expressed more visually than technically.
 See the test solution and the description of the algorithm for more details.
