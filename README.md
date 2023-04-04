@@ -13,7 +13,8 @@ Currentl version installed is v2021.3.3.
 ## LeetCode problems solved
 
 
-| #    | Title                                                                                 | Solution                                                             | Unit Test                                                              |
-|------|---------------------------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------|
-| 0007 | [reverse-integer](https://leetcode.com/problems/reverse-integer/description/)         | [Kotlin code](./src/main/kotlin/leetcode/P0007_ReverseInteger.kt)    | [Test code](./src/test/kotlin/leetcode/P0007_ReverseIntegerTest.kt)    |
-| 0042 | [trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/description/) | [Kotlin code](./src/main/kotlin/leetcode/P0042_TrappingRainWater.kt) | [Test code](./src/test/kotlin/leetcode/P0042_TrappingRainWaterTest.kt) |
+| #    | Title                                                                                 | Solution                                                             | Unit Test                                                               |
+|------|---------------------------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------|
+| 0007 | [reverse-integer](https://leetcode.com/problems/reverse-integer/description/)         | [Kotlin code](./src/main/kotlin/leetcode/P0007_ReverseInteger.kt)    | [Test code](./src/test/kotlin/leetcode/P0007_ReverseIntegerTest.kt)     |
+| 0042 | [trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/description/) | [Kotlin code](./src/main/kotlin/leetcode/P0042_TrappingRainWater.kt) | [Test code](./src/test/kotlin/leetcode/P0042_TrappingRainWaterTest.kt)  |
+| 0085 | [trapping-rain-water](https://leetcode.com/problems/maximal-rectangle/description/)   | [Kotlin code](./src/main/kotlin/leetcode/P0085_MaximalRectangle.kt)  | [Test code](./src/test/kotlin/leetcode/P0085_MaximalRectangleTest.kt)   |
