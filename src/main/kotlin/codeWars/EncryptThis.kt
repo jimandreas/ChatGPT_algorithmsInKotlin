@@ -1,3 +1,5 @@
+@file:Suppress("CascadeIf")
+
 package codeWars
 
 /**
@@ -23,20 +25,25 @@ Please also seperately provide 5 JUNIT5 test cases for decryption of words in a 
 
 Thank you!
 
+ NB: added this condition as it wasn't in the problem statement:
+Please add a case to the encrypt and decrypt functions for two letter words.
+For two letter words only the first letter is converted to its ASCII code
+and the second letter is retained unchanged. Thank you.
+
  */
 class EncryptThis {
     fun encryptThis(text: String): String {
         val words = text.split(" ")
         val encryptedWords = words.map { word ->
-            when {
-                word.isEmpty() -> "" // Skip empty words
-                word.length == 1 -> word[0].toInt().toString() // Encrypt single-letter words
-                else -> {
-                    val firstChar = word[0].toInt()
-                    val secondChar = word[1]
-                    val lastChar = word[word.length - 1]
-                    "$firstChar$lastChar${word.substring(2, word.length - 1)}$secondChar"
-                }
+            if (word.length == 1) {
+                word[0].toInt().toString()
+            } else if (word.length == 2) {
+                "${word[0].toInt()}${word[1]}"
+            } else {
+                val firstChar = word[0].toInt()
+                val secondChar = word[1]
+                val lastChar = word[word.length - 1]
+                "$firstChar$lastChar${word.substring(2, word.length - 1)}$secondChar"
             }
         }
         return encryptedWords.joinToString(" ")
@@ -45,18 +52,17 @@ class EncryptThis {
     fun decryptThis(text: String): String {
         val words = text.split(" ")
         val decryptedWords = words.map { word ->
-            when {
-                word.isEmpty() -> "" // Skip empty words
-                word.length == 1 -> word.toInt().toChar().toString() // Decrypt single-letter words
-                else -> {
-                    val firstChar = word.substring(0, 1).toInt().toChar()
-                    val secondChar = word[word.length - 1]
-                    val lastChar = word[word.length - 2]
-                    "$firstChar$secondChar${word.substring(1, word.length - 2)}$lastChar"
-                }
+            if (word.length <= 2) {
+                word
+            } else {
+                val firstChar = word.substring(0, 1).toInt()
+                val secondChar = word[word.length - 1]
+                val middleChars = word.substring(1, word.length - 2)
+                "${firstChar.toChar()}$secondChar$middleChars"
             }
         }
         return decryptedWords.joinToString(" ")
     }
+
 
 }

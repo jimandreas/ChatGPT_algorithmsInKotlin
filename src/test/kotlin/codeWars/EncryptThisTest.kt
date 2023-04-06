@@ -7,6 +7,17 @@ internal class EncryptThisTest {
 
     private val solution = EncryptThis()
 
+    /**
+     *
+     * It took a couple of tries before ChatGPT removed all the apostrophes from the text strings.
+     * Note that the tests still are incorrect - ChatGPT was not "smart enough" to do the actual encoding
+     * and decoding of the strings for the test cases, but just made something up.
+     *
+    There is one more correction to make.
+    The word "There's" contains an apostrophe.
+    The apostrophe is a non-alpha charater and is not allowed.
+    Please recreate the tests using only alpha characters A-z.
+     */
 
     @Test
     fun testEncryptThis() {
