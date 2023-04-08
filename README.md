@@ -17,13 +17,14 @@ Current version installed is v2021.3.3.
 |------|---------------------------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------|
 | 0007 | [reverse-integer](https://leetcode.com/problems/reverse-integer/description/)         | [Kotlin code](./src/main/kotlin/leetcode/P0007_ReverseInteger.kt)    | [Test code](./src/test/kotlin/leetcode/P0007_ReverseIntegerTest.kt)     |
 | 0042 | [trapping-rain-water](https://leetcode.com/problems/trapping-rain-water/description/) | [Kotlin code](./src/main/kotlin/leetcode/P0042_TrappingRainWater.kt) | [Test code](./src/test/kotlin/leetcode/P0042_TrappingRainWaterTest.kt)  |
-| 0085 | [trapping-rain-water](https://leetcode.com/problems/maximal-rectangle/description/)   | [Kotlin code](./src/main/kotlin/leetcode/P0085_MaximalRectangle.kt)  | [Test code](./src/test/kotlin/leetcode/P0085_MaximalRectangleTest.kt)   |
+| 0085 | [maximal-rectangle](https://leetcode.com/problems/maximal-rectangle/description/)     | [Kotlin code](./src/main/kotlin/leetcode/P0085_MaximalRectangle.kt)  | [Test code](./src/test/kotlin/leetcode/P0085_MaximalRectangleTest.kt)   |
 
 ### Codewars problems solved:
 
-| #    | Name                                                                             | Solution                                                   | Unit Test                                                           |
-|------|----------------------------------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------|
-| ---- | [Two Oldest Ages](https://www.codewars.com/kata/511f11d355fe575d2c000001/kotlin) | [Kotlin code](./src/main/kotlin/codeWars/TwoOldestAges.kt) | [Test code](./src/test/kotlin/codeWars/TwoOldestAgesTest.kt)        |
+| #    | Name                                                                             | Solution                                                   | Unit Test                                                    |
+|------|----------------------------------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------|
+| ---- | [Two Oldest Ages](https://www.codewars.com/kata/511f11d355fe575d2c000001/kotlin) | [Kotlin code](./src/main/kotlin/codeWars/TwoOldestAges.kt) | [Test code](./src/test/kotlin/codeWars/TwoOldestAgesTest.kt) |
+| ---- | [EncryptThis](https://www.codewars.com/kata/5848565e273af816fb000449)            | [Kotlin code](./src/main/kotlin/codeWars/EncryptThis.kt)   | [Test code](./src/test/kotlin/codeWars/EncryptThisTest.kt)   |
 
 ### HackerRank problem ("not solved")
 
@@ -39,6 +40,9 @@ the first person wanted to buy 467 million tickets.   The expected answer was al
 
 yep. 36 Billion for the number of iterations to get the last ticket purchased.   No wonder that the thing timed out.
 
-At this point HackerRank attempts are ABANDONED.  Basically not impressed by HackerRank but I am VERY IMPRESSED by 
-the ability of ChatCPT to work with corrections to a problem that was expressed more visually than technically.
-See the test solution and the description of the algorithm for more details.
+[EDIT] this suggests that the "Buying Show Tickets" solution requires a "Hack" lol
+algorithmically to subtract the smallest non-zero ticket remainder from
+the patrons to accelerate the loop.  I don't find this hack to be interesting
+enough to persue with ChatGPT, and am not all that impressed by the 
+problem statement that didn't give a clue that this was necessary to
+pass the test framework.
