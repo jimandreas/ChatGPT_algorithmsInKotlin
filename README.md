@@ -67,7 +67,13 @@ experiments are likely to be rather small toy algos at this time.
 
 ### Bard basic experiments (not related to a test plaform)
 
+
 | #             | Description                                                                              | Solution                                                                | Unit Test                                                                 |
 |---------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | BridgeProblem | [Königsberg Bridge Problem](https://mathworld.wolfram.com/KoenigsbergBridgeProblem.html) | [Kotlin code](./src/main/kotlin/bardGoogle/SevenBridgesOfKonigsberg.kt) | [Test code](./src/test/kotlin/bardGoogle/SevenBridgesOfKonigsbergTest.kt) |
 
+
+Sources as given by Bard.google.com
+1. github.com/AptoPayments/apto-ui-sdk-android
+2. github.com/square/okhttp
+3. github.com/apache/kafka
