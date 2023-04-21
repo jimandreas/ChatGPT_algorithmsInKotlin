@@ -46,3 +46,28 @@ the patrons to accelerate the loop.  I don't find this hack to be interesting
 enough to persue with ChatGPT, and am not all that impressed by the 
 problem statement that didn't give a clue that this was necessary to
 pass the test framework.
+
+## Bard (Google) 
+
+What is different with Bard is that it has no real history.   When asking for the solution
+to an algorithm in Kotlin - it repeats the algorithm along with the 
+requested unit tests.   In this respect ChatGPT is MUCH more powerful.
+The Google Bard system forgets what the parameter types it used for the
+previous solution so you must copy/paste the L&G (latest and greatest) 
+solution to make sure the unit tests match the code.
+
+It also suffers from not running the unit tests itself to verify that
+the unit tests it generated actually work.   This is a next level problem
+for the AGI systems.  When they are able to perform self-testing and self-analysis
+of generated code, then they will be truly powerful.  As it stands they are
+pretty good code assemblers.
+
+OK on to the experiments.  Because of the limitations above, these 
+experiments are likely to be rather small toy algos at this time.
+
+### Bard basic experiments (not related to a test plaform)
+
+| #             | Description                                                                              | Solution                                                                | Unit Test                                                                 |
+|---------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| BridgeProblem | [Königsberg Bridge Problem](https://mathworld.wolfram.com/KoenigsbergBridgeProblem.html) | [Kotlin code](./src/main/kotlin/bardGoogle/SevenBridgesOfKonigsberg.kt) | [Test code](./src/test/kotlin/bardGoogle/SevenBridgesOfKonigsbergTest.kt) |
+
