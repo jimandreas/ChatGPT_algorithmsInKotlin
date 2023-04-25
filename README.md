@@ -67,10 +67,13 @@ experiments are likely to be rather small toy algos at this time.
 
 ### Bard basic experiments (not related to a test plaform)
 
+Note that the LeetCode 149 solution as of April 25 was not correct.
 
 | #             | Description                                                                              | Solution                                                                | Unit Test                                                                 |
 |---------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | BridgeProblem | [Königsberg Bridge Problem](https://mathworld.wolfram.com/KoenigsbergBridgeProblem.html) | [Kotlin code](./src/main/kotlin/bardGoogle/SevenBridgesOfKonigsberg.kt) | [Test code](./src/test/kotlin/bardGoogle/SevenBridgesOfKonigsbergTest.kt) |
+| LeetCode 149  | [Max Points On A Line](https://leetcode.com/problems/max-points-on-a-line/)              | [Kotlin code](./src/main/kotlin/bardGoogle/P0149_MaxPointsOnALine.kt)   | No test code                                                              |
+
 
 
 Sources as given by Bard.google.com
