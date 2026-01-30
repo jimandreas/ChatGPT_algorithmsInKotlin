@@ -35,3 +35,8 @@ Source and test code is organized by platform under `src/main/kotlin/` and `src/
 - `bardGoogle/` — Google Bard experiments (SevenBridgesOfKonigsberg, MaxPointsOnALine)
 
 Each source file has a corresponding `*Test` class in the matching test package.
+
+## Known Issues
+
+- **Gradle 9.x requires `junit-platform-launcher`**: The `testRuntimeOnly("org.junit.platform:junit-platform-launcher")` dependency is required in `build.gradle.kts`. Without it, tests fail with "Failed to load JUnit Platform."
+- **3 of 4 SevenBridgesOfKonigsberg tests fail**: The Bard-generated algorithm is broken (DFS never returns `true`). These failures are intentionally preserved as historical record.
